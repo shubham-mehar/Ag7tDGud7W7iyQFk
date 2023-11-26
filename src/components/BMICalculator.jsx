@@ -1,7 +1,14 @@
+import { useState } from "react";
 
 const BMICalculator = () => {
-  return (
-    <div>BMICalculator</div>
+  const [weight, setWeight] = useState('0');
+  const [height, setHeight] = useState('0');
+
+    return (
+    <div>
+        <h1>BMICalculator</h1>
+
+    </div>
   )
 }
 
