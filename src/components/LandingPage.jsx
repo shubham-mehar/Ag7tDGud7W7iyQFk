@@ -2,16 +2,19 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="container">
         <h1>Shubham </h1>
         <p>June-2023</p>
         <p>React, JavaScript, C++, Python, Git</p>
-        <a href="../src/assets/Resume_Shubham.pdf" download>
+        <a href="/Resume.pdf" download>
             Download Resume
         </a>   
         <br/>
-        <br/> 
+        <br/>
         <Link to='/bmi'>BMI Calculator</Link>
+        <br/>
+        <br/>
+        <iframe src={'/Resume.pdf'} width='50%' height='1050px' />
     </div>
   )
 }
