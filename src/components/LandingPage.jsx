@@ -8,7 +8,9 @@ const LandingPage = () => {
         <p>React, JavaScript, C++, Python, Git</p>
         <a href="../src/assets/Resume_Shubham.pdf" download>
             Download Resume
-        </a>
+        </a>   
+        <br/>
+        <br/> 
         <Link to='/bmi'>BMI Calculator</Link>
     </div>
   )
