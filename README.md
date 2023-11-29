@@ -1,4 +1,4 @@
-# Technical Assignment 
+# CubixCraft Internship Technical Assignment 
 
 This is a simple React application that includes a landing page with candidate details and a BMI calculator.
 
