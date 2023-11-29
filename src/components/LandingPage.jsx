@@ -14,7 +14,7 @@ const LandingPage = () => {
         <Link to='/bmi'>BMI Calculator</Link>
         <br/>
         <br/>
-        <iframe src={'/Resume.pdf'} width='50%' height='1050px' />
+        <iframe src={'/Ag7tDGud7W7iyQFk/Resume.pdf'} width='50%' height='1050px' />
     </div>
   )
 }
