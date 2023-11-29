@@ -1,6 +1,7 @@
 import {Route, Routes} from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import BMICalculator from './components/BMICalculator';
+import './App.css';
 
 const App = () => {
   return (
