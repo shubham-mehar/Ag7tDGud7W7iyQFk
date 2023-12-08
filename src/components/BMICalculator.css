@@ -40,6 +40,12 @@
     width: 100%;
 }
 
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
 .calculate-button:hover {
     background-color: #45a049;
 }
