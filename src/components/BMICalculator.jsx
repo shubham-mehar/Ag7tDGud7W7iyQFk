@@ -17,7 +17,7 @@ const BMICalculator = () => {
             alert("Please enter valid weight and height values. \nValid weight value ranges from 1.0-300.0 \nValid height value ranges from 0.1-3.0");
             return;
         }
-        const bmiResult = (validWeight / validHeight).toFixed(1);
+        const bmiResult = (validWeight / (validHeight*validHeight)).toFixed(1);
         setBMI(bmiResult);
     }
 
