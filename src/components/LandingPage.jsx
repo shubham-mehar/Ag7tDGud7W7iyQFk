@@ -6,7 +6,7 @@ const LandingPage = () => {
         <h1>Shubham </h1>
         <p>June-2023</p>
         <p>React, JavaScript, C++, Python, Git</p>
-        <a href="/Resume.pdf" download>
+        <a href="/Ag7tDGud7W7iyQFk/Resume.pdf" download>
             Download Resume
         </a>   
         <br/>
@@ -14,7 +14,7 @@ const LandingPage = () => {
         <Link to='/bmi'>BMI Calculator</Link>
         <br/>
         <br/>
-        <iframe src={'/Resume.pdf'} width='50%' height='1050px' />
+        <iframe src={'/Ag7tDGud7W7iyQFk/Resume.pdf'} width='50%' height='1050px' />
     </div>
   )
 }
