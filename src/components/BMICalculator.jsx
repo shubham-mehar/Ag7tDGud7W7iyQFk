@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
+import InputField from './InputField';
 import './BMICalculator.css';
 
 const BMICalculator = () => {
   const [weight, setWeight] = useState('0');
   const [height, setHeight] = useState('0');
   const [validationErrors, setValidationErrors] = useState({});
-  let calculatedBMI = null; 
-  
+  let calculatedBMI = null;
+
   const validateInput = () => {
     const errors = {};
     const validWeight = parseFloat(weight);
@@ -29,13 +30,13 @@ const BMICalculator = () => {
     } else{
       calculatedBMI = null;
     }
-  };
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
     calculateBMI();
     if (calculatedBMI !== null) {
-      const resultElement = document.getElementById("calculated-bmi");
+      const resultElement = document.getElementById('calculated-bmi');
       resultElement.innerText = `Your BMI is: ${calculatedBMI}`;
     }
   };
@@ -45,24 +46,18 @@ const BMICalculator = () => {
       <form onSubmit={handleSubmit} className="bmi-container">
         <h1 className="bmi-heading">BMI Calculator</h1>
         <div className="input-container">
-        <label className="input-label">Weight(kg): </label>
-        <input className="input-field" type="number" value={weight}
-            onChange={(e) => {
-              setWeight(e.target.value);
-              setValidationErrors((errors) => ({ ...errors, weight: '' }));
-            }}/>
-        {validationErrors.weight && (
-          <span className="error-message">{validationErrors.weight}</span>
-        )}
-        <label className="input-label">Height(m): </label>
-        <input className="input-field" type="number" value={height}
-            onChange={(e) => { 
-              setHeight(e.target.value);
-              setValidationErrors((errors) => ({ ...errors, height: '' }));
-          }}/>
-          {validationErrors.height && (
-            <span className="error-message">{validationErrors.height}</span>
-        )}
+          <InputField
+            label="Weight(kg)"
+            value={weight}
+            onChange={setWeight}
+            error={validationErrors.weight}
+          />
+          <InputField
+            label="Height(m)"
+            value={height}
+            onChange={setHeight}
+            error={validationErrors.height}
+          />
         </div>
         <button className="calculate-button">Calculate BMI</button>
         <p id="calculated-bmi" className="result-text"></p>
